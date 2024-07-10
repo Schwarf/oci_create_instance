@@ -15,7 +15,7 @@ counter = 0
 # Create instance in a loop until successful
 while True:
     counter += 1
-    i =  counter % 3 + 1
+    i = counter % 3 + 1
     availability_domain = "eiDh:EU-FRANKFURT-1-AD-" + str(i)
     print("try number", counter, "to instance", availability_domain)
     try:
@@ -38,7 +38,7 @@ while True:
                     memory_in_gbs=12),
                 source_details=oci.core.models.InstanceSourceViaImageDetails(
                     source_type="image",
-                    image_id="ocid1.image.oc1.eu-frankfurt-1.aaaaaaaasw2363mmgi4fbjizg2f3p4vdbfmiw7xll5mk4457ijmpahbsa4na"),
+                    image_id="stuff"),
                 display_name="abs-chat-server"
             )
         )
